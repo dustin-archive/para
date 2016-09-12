@@ -20,10 +20,10 @@
 
 // styles
 ._border {
-  border: solid 2px $dark-3;
+  border: solid $border $dark-3;
 
   > ._inner {
-    margin: -2px;
+    margin: (0 - $border);
   }
 }
 
