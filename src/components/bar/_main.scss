@@ -1,0 +1,12 @@
+.bar {
+  flex: 1;
+  height: 64px;
+  margin: 32px 0 0;
+  color: $light-1;
+  background: $dark-1;
+  box-shadow: 0 8px 16px 0 rgba(#000, 0.125);
+
+  .wrap {
+    padding: 16px;
+  }
+}

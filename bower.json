@@ -1,0 +1,24 @@
+{
+  "name": "para",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dustin Dowell <dustindowell22@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "pilot-reset": "^1.1.0",
+    "pilot-frame": "^1.1.1",
+    "mint-sass": "^2.1.2",
+    "color-sass": "^2.0.0",
+    "taffy-break": "^4.0.0"
+  }
+}

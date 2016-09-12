@@ -1,0 +1,39 @@
+._layer.-modal {
+  padding: (64px + 32px + 16px) 16px 16px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 0 6px;
+  background: $dark-1;
+  cursor: pointer;
+
+  &:hover {
+    background: $blue;
+  }
+}
+
+.modal {
+  width: 720px - 32px;
+  min-height: 64px;
+  margin: auto;
+  transition: min-height 0.125s ease-in-out;
+  border-radius: 4px 6px 4px 4px;
+  color: $light-1;
+  background: $dark-1;
+  box-shadow: 0 8px 16px 0 rgba(#000, 0.125);
+
+  .wrap {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .modal {
+    min-height: 100%;
+  }
+}

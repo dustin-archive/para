@@ -1,0 +1,20 @@
+mixin menu
+  +overlay
+  ._layer.-menu
+    ._wrap
+      .menu._border
+        +use('nub')
+        ._inner
+          .wrap I am a menu.
+
+mixin menu-right
+  +overlay
+  ._layer.-menu
+    ._wrap
+      .menu.-right._border
+        |<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'>
+        |  <path fill='none' stroke='#1F2123' d='M0 6.5h16'/>
+        |  <path fill='#1F2123' stroke='#17191B' d='M16 6.5c-4 0-4-6-8-6s-4 6-8 6'/>
+        |</svg>
+        ._inner
+          .wrap I am a menu.

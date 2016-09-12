@@ -1,0 +1,68 @@
+._layer.-menu {
+  padding: (64px - 1px) 0 0;
+  transition: padding 0.125s ease-in-out;
+}
+
+.menu {
+  flex: 1;
+  max-width: 360px;
+  transition-duration: 0.125s;
+  transition-property: max-width, margin, border-radius, box-shadow;
+  transition-timing-function: ease-in-out;
+  color: $light-1;
+  background: $dark-1;
+  box-shadow: 8px 0 16px 0 rgba(#000, 0.125);
+
+  svg {
+    position: absolute;
+    top: -6px - 1px;
+    left: 16px - 1px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .wrap {
+    padding: 16px;
+  }
+
+  &.-right {
+    margin: 0 0 0 auto;
+    box-shadow: -8px 0 16px 0 rgba(#000, 0.125);
+
+    svg {
+      right: 16px - 1px;
+      left: initial;
+    }
+  }
+}
+
+@media (max-width: 360px + 180px) {
+  .menu {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu {
+    margin: 0 16px;
+
+    &.-right {
+      margin: 0 16px 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  ._layer.-menu {
+    padding: (64px + 16px) 0 16px 0;
+  }
+
+  .menu {
+    border-radius: 4px 6px;
+
+    &,
+    &.-right {
+      box-shadow: 0 8px 16px 0 rgba(#000, 0.125);
+    }
+  }
+}

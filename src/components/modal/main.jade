@@ -1,0 +1,11 @@
++template('modal')
+  div
+    div(v-on:click="$emit('close')")
+      +overlay
+    ._layer.-modal
+      .modal._border._focus(tabindex='1' v-on:keydown.esc="$emit('close')" ref='modal')
+        ._inner
+          .wrap
+            slot
+          .modal-close._border(v-on:click="$emit('close')")
+            ._inner

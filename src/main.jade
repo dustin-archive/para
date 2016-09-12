@@ -1,0 +1,38 @@
+//- utilities
+include /bower_components/pilot-frame/jade/index
+
+//- jade component mixins
+include components/bar/main
+include components/menu/main
+//- include components/modal/main
+include components/overlay/main
+include components/page/main
+include components/status/main
+
++html
+  +head
+    +svg
+      include svg/nub.xml
+
+    include components/modal/main
+
+    +style('main.css')
+    +script('https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.0-rc.5/vue.js')
+
+  +vue({ id: 'app', script: 'main.js' })
+    +page
+    //- +menu
+    //- +menu-right
+
+    ._layer
+      modal(v-if='login' v-on:close='login = !login' v-bind:style='{ zIndex: zLogin }')
+        h1 Login
+      modal(v-if='register' v-on:close='register = !register' v-bind:style='{ zIndex: zRegister }')
+        h1 Register
+
+    +bar
+      a(v-on:click='login = !login') Login
+      a(v-on:click='register = !register') Register
+      //- |{{ login }}
+      //- |{{ register }}
+    +status
