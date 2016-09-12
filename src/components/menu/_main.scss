@@ -1,5 +1,5 @@
 ._layer.-menu {
-  padding: (64px - 1px) 0 0;
+  padding: (64px - $border) 0 0;
   transition: padding 0.125s ease-in-out;
 }
 
@@ -15,8 +15,8 @@
 
   svg {
     position: absolute;
-    top: -6px - 1px;
-    left: 16px - 1px;
+    top: -6px - $border;
+    left: 16px - $border;
     width: 16px;
     height: 16px;
   }
@@ -30,7 +30,7 @@
     box-shadow: -8px 0 16px 0 rgba(#000, 0.125);
 
     svg {
-      right: 16px - 1px;
+      right: 16px - $border;
       left: initial;
     }
   }
@@ -43,26 +43,20 @@
 }
 
 @media (min-width: 1440px) {
-  .menu {
-    margin: 0 16px;
-
-    &.-right {
-      margin: 0 16px 0 auto;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
   ._layer.-menu {
     padding: (64px + 16px) 0 16px 0;
   }
 
   .menu {
+    margin: 0 16px;
     border-radius: 4px 6px;
 
-    &,
-    &.-right {
+    &, &.-right {
       box-shadow: 0 8px 16px 0 rgba(#000, 0.125);
+    }
+
+    &.-right {
+      margin: 0 16px 0 auto;
     }
   }
 }
