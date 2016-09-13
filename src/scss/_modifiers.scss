@@ -37,13 +37,15 @@
     outline: none;
 
     &::before {
+      $gap: 8px; // finsih gap math
+
       display: block;
       position: absolute;
       width: 100%;
       height: 100%;
       margin: -12px 0 0 -12px;
-      padding: 10px;
-      border: solid 2px $blue;
+      padding: $gap + $border;
+      border: solid $border $blue;
       border-radius: 14px;
       content: '';
       opacity: 0.5;
