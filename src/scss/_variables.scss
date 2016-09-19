@@ -6,6 +6,22 @@ $light-1: rgb(191, 199, 207);
 $light-2: rgb(207, 215, 223);
 $light-3: rgb(223, 231, 239);
 
-$blue: rgb(31, 159, 255);
+// hsl
+// $red:    hsl(355, 70, 50);
+// $yellow: hsl( 40, 80, 50);
+// $green:  hsl( 95, 50, 50);
+// $blue:   hsl(200, 75, 50);
 
-$border: 2px;
+// hsl to rgb
+// $red:    rgb(217, 38, 53);
+// $yellow: rgb(230, 162, 25);
+// $green:  rgb(117, 191, 64);
+// $blue:   rgb(32, 159, 223);
+
+// rgb to multiples of 8
+$red:    rgb(223, 31, 47);
+$yellow: rgb(223, 159, 31);
+$green:  rgb(127, 191, 63);
+$blue:   rgb(31, 159, 223);
+
+$border: 1px;

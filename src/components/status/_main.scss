@@ -1,10 +1,12 @@
 .status {
   flex: 1;
-  height: 32px;
+  height: 24px;
+  padding: 1px 0 0;
   transition-duration: 0.125s;
   transition-property: height, box-shadow;
   transition-timing-function: ease-in-out;
   color: $light-1;
+  font-size: 12px;
   background: $dark-3;
   box-shadow: 0 0 0 0 transparent;
 
@@ -14,6 +16,6 @@
   }
 
   .wrap {
-    padding: 8px 16px;
+    padding: 4px 16px;
   }
 }

@@ -1,0 +1,41 @@
+.search-wrap, .search {
+  width: 100%;
+  height: 100%;
+}
+
+.search-place {
+  position: absolute;
+  transition: opacity 0.125s ease-in-out;
+  pointer-events: none;
+
+  &::before {
+    content: 'Type shit to search';
+  }
+}
+
+.search-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.search {
+  padding: 0 8px 1px;
+  transition: border 0.125s ease-in-out;
+  // border: solid 1px $dark-3;
+  border-radius: 4px;
+  color: $green;
+  text-shadow: 0 0 0 $light-1;
+  background: rgba($light-1, 0.125);
+  -webkit-text-fill-color: transparent;
+
+  &:focus {
+    border-color: $green;
+    outline: none;
+
+    + .search-place {
+      opacity: 0;
+    }
+  }
+}

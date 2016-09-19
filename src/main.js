@@ -18,6 +18,16 @@ new Vue({
       if (this.zRegister > this.z) this.z = this.zRegister
     }
   },
+  // computed: {
+  //   zlogin: {
+  //     get: function () {
+  //       return this.z + 1
+  //     },
+  //     set: function () {
+  //
+  //     }
+  //   }
+  // },
   watch: {
     login: function (value) {
       this.zTrack(value)
@@ -39,6 +49,13 @@ new Vue({
       if (e.shiftKey && e.keyCode === 80) {
         v.search = !v.search
       }
+
+      // Escape Key
+      if (e.keyCode === 27) {
+        v.search = !v.search
+      }
+
+
     })
   }
 })

@@ -3,10 +3,14 @@ include /bower_components/pilot-frame/jade/index
 
 //- jade component mixins
 include components/bar/main
+include components/dock/main
 include components/menu/main
+include components/noise/main
 include components/overlay/main
 include components/page/main
+include components/search/main
 include components/status/main
+include components/window/main
 
 +html
   +head
@@ -20,6 +24,12 @@ include components/status/main
 
   +vue({ id: 'app', script: 'main.js' })
     +page
+
+      +window
+        p world
+        p world
+        p world
+
     //- +menu
     //- +menu-right
 
@@ -30,7 +40,12 @@ include components/status/main
         h1 Register
 
     +bar
-      a(v-on:click='login = !login') Login
-      | ___
-      a(v-on:click='register = !register') Register
+      +search
+      //- a(v-on:click='login = !login') Login
+      //- | ___
+      //- a(v-on:click='register = !register') Register
     +status
+
+    +dock
+
+    +noise

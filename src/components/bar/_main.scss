@@ -1,12 +1,15 @@
+._layer.-bar {
+  padding: 24px 0 0;
+}
+
 .bar {
   flex: 1;
-  height: 64px;
-  margin: 32px 0 0;
+  height: 56px;
   color: $light-1;
-  background: $dark-1;
+  background: linear-gradient($dark-1, $dark-2);
   box-shadow: 0 8px 16px 0 rgba(#000, 0.125);
 
-  .wrap {
-    padding: 16px;
-  }
+  // .wrap {
+  //   padding: 16px;
+  // }
 }

@@ -3,7 +3,8 @@
     div(v-on:click="$emit('close')")
       +overlay
     ._layer.-modal
-      .modal._border._focus(tabindex='1' v-on:keydown.esc="$emit('close')" ref='modal')
+      //- .modal._border._focus(tabindex='1' v-on:keydown.esc="$emit('close')" ref='modal')
+      .modal._border._focus
         ._inner
           .wrap
             slot

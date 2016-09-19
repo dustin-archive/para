@@ -4,13 +4,28 @@
 // reset
 @import 'bower_components/pilot-reset/scss/main';
 
+*::selection {
+  background: $green;
+}
+
+body {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 // jade component mixins
 @import 'components/bar/main';
+@import 'components/dock/main';
+@import 'components/noise/main';
 @import 'components/menu/main';
 @import 'components/modal/main';
 @import 'components/overlay/main';
 @import 'components/page/main';
+@import 'components/search/main';
 @import 'components/status/main';
+@import 'components/window/main';
 
 // modifiers
+@import 'scss/layer';
 @import 'scss/modifiers';
+@import 'scss/styles';
