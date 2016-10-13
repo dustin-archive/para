@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Dustin Dowell <dustindowell22@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pilot-frame": "^2.0.1",
+    "pilot-reset": "^1.2.1",
+    "taffy-break": "^4.0.0"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "browserify": "^13.1.0",
