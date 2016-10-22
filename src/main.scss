@@ -2,7 +2,7 @@
 @import 'scss/variables';
 
 // reset
-@import 'bower_components/pilot-reset/scss/main';
+@import 'pilot-reset/scss/main';
 
 *::selection {
   background: $green;
@@ -14,16 +14,16 @@ body {
 }
 
 // jade component mixins
-@import 'components/bar/main';
-@import 'components/dock/main';
-@import 'components/noise/main';
-@import 'components/menu/main';
-@import 'components/modal/main';
-@import 'components/overlay/main';
-@import 'components/page/main';
-@import 'components/search/main';
-@import 'components/status/main';
-@import 'components/window/main';
+@import 'bar/main';
+@import 'dock/main';
+@import 'noise/main';
+@import 'menu/main';
+@import 'modal/main';
+@import 'overlay/main';
+@import 'page/main';
+@import 'search/main';
+@import 'status/main';
+@import 'window/main';
 
 // modifiers
 @import 'scss/layer';

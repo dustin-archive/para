@@ -1,5 +1,5 @@
 //- utilities
-include /bower_components/pilot-frame/jade/index
+include ../node_modules/pilot-frame/jade/main
 
 //- jade component mixins
 include components/bar/main
@@ -17,10 +17,11 @@ include components/window/main
     +svg
       include svg/nub.xml
 
+    //- vue component templates
     include components/modal/main
 
     +style('main.css')
-    +script('https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.0-rc.5/vue.js')
+    +script('https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js')
 
   +vue({ id: 'app', script: 'main.js' })
     +page
