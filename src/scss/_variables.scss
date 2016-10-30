@@ -6,6 +6,8 @@ $light-1: rgb(191, 199, 207);
 $light-2: rgb(207, 215, 223);
 $light-3: rgb(223, 231, 239);
 
+$dark-gradient: linear-gradient($dark-1, $dark-3);
+
 // hsl
 // $red:    hsl(355, 70, 50);
 // $yellow: hsl( 40, 80, 50);
@@ -25,3 +27,4 @@ $green:  rgb(127, 191, 63);
 $blue:   rgb(31, 159, 223);
 
 $border: 1px;
+$radius: 4px;

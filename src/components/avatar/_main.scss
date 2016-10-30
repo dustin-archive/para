@@ -1,0 +1,15 @@
+.avatar {
+  width: 100%;
+  max-width: 192px;
+  margin: auto;
+  border-radius: 50%;
+  background: url('assets/avatar.png');
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    display: block;
+    padding: 0 0 100%;
+    content: '';
+  }
+}

@@ -1,8 +1,19 @@
+$padding-top: null;
+
+@if variable-exists(component-bar) and $component-bar {
+  $padding-top: em(48);
+}
+
 .page {
   flex: 1;
-  padding: (56px + 24px + 12px) 12px 12px;
-  background: $light-1;
-  background-image: url('lake.jpeg');
-  background-position: center;
-  background-size: cover;
+  padding: $padding-top 0 0;
+  background: $dark-3;
+  overflow: auto;
+
+  // legacy
+  // background: $light-1;
+  // background-position: center;
+  // background-size: cover;
+  // padding: (56px + 24px + 12px) 12px 12px;
+  // background-image: url('lake.jpeg');
 }

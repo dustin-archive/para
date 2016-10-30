@@ -1,3 +1,6 @@
+// utilities
+@import 'mint-sass/scss/main';
+
 // variables
 @import 'scss/variables';
 
@@ -5,25 +8,39 @@
 @import 'pilot-reset/scss/main';
 
 *::selection {
-  background: $green;
+  background: rgba($green, 0.75);
+}
+
+@font-face {
+  font-family: Gidolinya;
+  src: local('Gidolinya'), url('assets/Gidolinya-Regular.otf') format('opentype');
 }
 
 body {
-  font-size: 14px;
-  line-height: 16px;
+  font: 400 1rem/1 Gidolinya, sans-serif;
 }
 
+// conditional component variables
+$component-bar: true;
+// $component-status: true;
+
 // jade component mixins
+@import 'avatar/main';
 @import 'bar/main';
-@import 'dock/main';
-@import 'noise/main';
-@import 'menu/main';
-@import 'modal/main';
-@import 'overlay/main';
+@import 'card/main';
+@import 'grid/main';
 @import 'page/main';
-@import 'search/main';
-@import 'status/main';
-@import 'window/main';
+
+// @import 'bar/main';
+// @import 'dock/main';
+// @import 'noise/main';
+// @import 'menu/main';
+// @import 'modal/main';
+// @import 'overlay/main';
+// @import 'page/main';
+// @import 'search/main';
+// @import 'status/main';
+// @import 'window/main';
 
 // modifiers
 @import 'scss/layer';

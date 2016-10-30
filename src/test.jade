@@ -1,0 +1,52 @@
+//- utilities
+include ../node_modules/pilot-frame/jade/main
+
+//- jade component mixins
+include components/bar/main
+include components/dock/main
+include components/menu/main
+include components/noise/main
+include components/overlay/main
+include components/page/main
+include components/search/main
+include components/status/main
+include components/window/main
+
++html
+  +head
+    +svg
+      include svg/nub.xml
+
+    //- vue component templates
+    include components/modal/main
+
+    +style('main.css')
+    +script('https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js')
+
+  +vue
+    +page
+
+      +window
+        p world
+        p world
+        p world
+
+    //- +menu
+    //- +menu-right
+
+    ._layer
+      modal(v-if='login' v-on:close='login = !login' v-bind:style='{ zIndex: zLogin }')
+        h1 Login
+      modal(v-if='register' v-on:close='register = !register' v-bind:style='{ zIndex: zRegister }')
+        h1 Register
+
+    +bar
+      +search
+      //- a(v-on:click='login = !login') Login
+      //- | ___
+      //- a(v-on:click='register = !register') Register
+    +status
+
+    +dock
+
+    +noise

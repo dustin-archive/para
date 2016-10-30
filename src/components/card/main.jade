@@ -1,0 +1,24 @@
+mixin card-stats
+  .card-stats
+    .card-stats-column
+      h1 100
+      h2 Pictures
+    .card-stats-column
+      h1 100
+      h2 Followers
+    .card-stats-column
+      h1 100
+      h2 Following
+
+mixin card-info
+  .card-info
+    .card-user Whaaaley
+    +card-stats
+    .card-button Following
+
+mixin card
+  .card
+    .card-overlay._layer-inner
+    .wrap
+      .card-left: +avatar
+      .card-right: +card-info

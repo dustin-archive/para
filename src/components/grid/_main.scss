@@ -1,0 +1,24 @@
+$grid-gutter: 1px;
+
+.grid-item {
+  width: calc((100% / 3) - #{$grid-gutter * 2});
+  margin: $grid-gutter;
+  border-radius: $radius;
+  background-color: $dark-1; // before images load
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    display: block;
+    padding: 0 0 100%;
+    content: '';
+  }
+}
+
+.grid {
+  display: flex;
+  flex-flow: wrap;
+  padding: $grid-gutter;
+  // margin: 0 - $grid-gutter;
+  // padding: $grid-gutter * 2;
+}

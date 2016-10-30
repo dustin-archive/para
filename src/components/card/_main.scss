@@ -1,0 +1,74 @@
+.card-button {
+  $height: (24 + 32) / 2; // 28
+  $padding: ($height - $mint-base) / 2; // 6
+  $border-radius: $height / 2; // 14
+  height: em($height);
+  padding: em($padding 0);
+  border-radius: em($border-radius);
+  text-align: center;
+  background: $green;
+  cursor: pointer;
+}
+
+.card-stats-column {
+  text-align: center;
+
+  h1 {
+    font-size: em(24);
+  }
+
+  h2 {
+    font-size: em(14);
+  }
+}
+
+.card-stats, .card-user {
+  padding: 0 em(6); // same as .card-button padding
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-user {
+  font-size: em(32);
+}
+
+.card-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-overlay {
+  background: rgba($dark-3, 0.25);
+}
+
+.card-left,
+.card-right,
+.card {
+  padding: em(8 4);
+}
+
+.card-left {
+  flex: 1;
+}
+
+.card-right {
+  width: 61.803398874989484%; // golden ratio 15 decimals
+}
+
+.card {
+  flex: 1;
+  border-radius: $radius;
+  color: $light-3;
+  background: url('assets/2.gif');
+  background-position: center;
+  background-size: cover;
+
+  .wrap {
+    display: flex;
+  }
+}

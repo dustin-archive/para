@@ -1,15 +1,18 @@
-._layer.-bar {
-  padding: 24px 0 0;
+@if variable-exists(component-status) and $component-status {
+  ._layer.-bar {
+    padding: 24px 0 0;
+  }
 }
 
 .bar {
   flex: 1;
-  height: 56px;
+  height: em(48);
   color: $light-1;
-  background: linear-gradient($dark-1, $dark-2);
-  box-shadow: 0 8px 16px 0 rgba(#000, 0.125);
+  // background: blue;
 
-  // .wrap {
-  //   padding: 16px;
-  // }
+  // legacy
+  background: $dark-3;
+  // background: $dark-gradient;
+  // box-shadow: 0 8px 16px 0 rgba(#000, 0.125); // can't be used with border
+  // background: linear-gradient($dark-1, $dark-2);
 }
